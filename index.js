@@ -1,11 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import dotenv from 'dotenv'
 import { router as imageRouter } from './routes/image.js'
 import { deleteFiles } from './utils/deleteFiles.js'
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
 
 const PORT = process.env.PORT || 3000
 const app = express()
