@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon --env-file=config.env index.js"
   },
   "keywords": [
     "express",
@@ -22,7 +22,6 @@
     "sharp": "^0.33.4"
   },
   "devDependencies": {
-    "dotenv": "^16.4.5",
     "nodemon": "^3.1.0"
   }
 }
